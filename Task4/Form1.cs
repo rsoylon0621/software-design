@@ -17,6 +17,7 @@ namespace Task4
             int[] numbers = { 3, 1, 5, 2, 4 };
             int[] sortedNumbers = ProceduralSort(numbers);
             listBoxResults.DataSource = sortedNumbers;
+
         }
     }
 }
