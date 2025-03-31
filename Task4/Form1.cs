@@ -1,4 +1,4 @@
-namespace lab1
+namespace Task4
 {
     public partial class Form1 : Form
     {
@@ -12,7 +12,7 @@ namespace lab1
             return numbers;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSort_Click_Click(object sender, EventArgs e)
         {
             int[] numbers = { 3, 1, 5, 2, 4 };
             int[] sortedNumbers = ProceduralSort(numbers);
