@@ -1,6 +1,6 @@
 ﻿namespace lab1
 {
-	partial class Form1
+	partial class AsSort
 	{
 		/// <summary>
 		///  Required designer variable.
@@ -28,44 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSort_Click = new Button();
+            btnSort = new Button();
             listBoxResults = new ListBox();
             SuspendLayout();
             // 
-            // btnSort_Click
+            // btnSort
             // 
-            btnSort_Click.Location = new Point(332, 87);
-            btnSort_Click.Name = "btnSort_Click";
-            btnSort_Click.Size = new Size(75, 23);
-            btnSort_Click.TabIndex = 0;
-            btnSort_Click.Text = "button1";
-            btnSort_Click.UseVisualStyleBackColor = true;
-            btnSort_Click.Click += button1_Click;
+            btnSort.Location = new Point(61, 54);
+            btnSort.Margin = new Padding(3, 4, 3, 4);
+            btnSort.Name = "btnSort";
+            btnSort.Size = new Size(86, 31);
+            btnSort.TabIndex = 0;
+            btnSort.Text = "Sort";
+            btnSort.UseVisualStyleBackColor = true;
+            btnSort.Click += button1_Click;
             // 
             // listBoxResults
             // 
             listBoxResults.FormattingEnabled = true;
-            listBoxResults.ItemHeight = 15;
-            listBoxResults.Location = new Point(309, 148);
+            listBoxResults.Location = new Point(194, 57);
+            listBoxResults.Margin = new Padding(3, 4, 3, 4);
             listBoxResults.Name = "listBoxResults";
-            listBoxResults.Size = new Size(120, 94);
+            listBoxResults.Size = new Size(655, 444);
             listBoxResults.TabIndex = 1;
             // 
-            // Form1
+            // AsSort
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(listBoxResults);
-            Controls.Add(btnSort_Click);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(btnSort);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "AsSort";
+            Text = "AsSort";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnSort_Click;
+        private Button btnSort;
         private ListBox listBoxResults;
     }
 }

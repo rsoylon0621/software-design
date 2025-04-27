@@ -1,14 +1,15 @@
 namespace Task4
 {
-    public partial class Form1 : Form
+    public partial class DesSort : Form
     {
-        public Form1()
+        public DesSort()
         {
             InitializeComponent();
         }
         public int[] ProceduralSort(int[] numbers)
         {
             Array.Sort(numbers);
+            Array.Reverse(numbers);
             return numbers;
         }
 
@@ -17,6 +18,11 @@ namespace Task4
             int[] numbers = { 3, 1, 5, 2, 4 };
             int[] sortedNumbers = ProceduralSort(numbers);
             listBoxResults.DataSource = sortedNumbers;
+
+        }
+
+        private void DesSort_Load(object sender, EventArgs e)
+        {
 
         }
     }

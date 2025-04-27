@@ -1,6 +1,6 @@
 ﻿namespace Task4
 {
-    partial class Form1
+    partial class DesSort
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,44 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSort_Click = new Button();
+            btnSort = new Button();
             listBoxResults = new ListBox();
             SuspendLayout();
             // 
-            // btnSort_Click
+            // btnSort
             // 
-            btnSort_Click.Location = new Point(27, 33);
-            btnSort_Click.Name = "btnSort_Click";
-            btnSort_Click.Size = new Size(108, 37);
-            btnSort_Click.TabIndex = 0;
-            btnSort_Click.Text = "button1";
-            btnSort_Click.UseVisualStyleBackColor = true;
-            btnSort_Click.Click += btnSort_Click_Click;
+            btnSort.Location = new Point(31, 44);
+            btnSort.Margin = new Padding(3, 4, 3, 4);
+            btnSort.Name = "btnSort";
+            btnSort.Size = new Size(123, 49);
+            btnSort.TabIndex = 0;
+            btnSort.Text = "Sort";
+            btnSort.UseVisualStyleBackColor = true;
+            btnSort.Click += btnSort_Click_Click;
             // 
             // listBoxResults
             // 
             listBoxResults.FormattingEnabled = true;
-            listBoxResults.ItemHeight = 15;
-            listBoxResults.Location = new Point(179, 33);
+            listBoxResults.Location = new Point(205, 44);
+            listBoxResults.Margin = new Padding(3, 4, 3, 4);
             listBoxResults.Name = "listBoxResults";
-            listBoxResults.Size = new Size(553, 289);
+            listBoxResults.Size = new Size(631, 384);
             listBoxResults.TabIndex = 1;
             // 
-            // Form1
+            // DesSort
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(listBoxResults);
-            Controls.Add(btnSort_Click);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(btnSort);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "DesSort";
+            Text = "DesSort";
+            Load += DesSort_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnSort_Click;
+        private Button btnSort;
         private ListBox listBoxResults;
     }
 }
